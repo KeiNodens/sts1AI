@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "cards": {
+    "Strike_R": {
+      "fx": [
+        {
+          "op": "damage",
+          "n": 6,
+          "tgt": "enemy"
+        }
+      ]
+    },
+    "Bash": {
+      "fx": [
+        {
+          "op": "damage",
+          "n": 8,
+          "tgt": "enemy"
+        },
+        {
+          "op": "apply_power",
+          "n": 2,
+          "power": "Vulnerable",
+          "tgt": "enemy"
+        }
+      ]
+    },
+    "Defend_R": {
+      "fx": [
+        {
+          "op": "block",
+          "n": 5,
+          "tgt": "self"
+        }
+      ]
+    },
+    "Perfected Strike": {
+      "fx": [
+        {
+          "op": "damage",
+          "n": 6,
+          "tgt": "enemy"
+        }
+      ]
+    }
+  },
+  "powers": {
+    "Vulnerable": "debuff",
+    "Dexterity": "buff"
+  }
+}

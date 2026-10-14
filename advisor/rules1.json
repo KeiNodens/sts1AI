@@ -1,0 +1,116 @@
+{
+  "_readme": "StS1 var_rules 相当 + per-mod キュレーション。card_rules は全 mod 共通(card id で適用)。mods.<mod名> は KB エントリの mod フィールドと照合して適用: powers=パワー型上書き(buff/debuff/resource)、resources=独自ゲージの意味メモ、cards.<id>=fx_replace/fx_add。ルール由来 fx には rule:true が付き guess 割引を受けない。fx_replace は後勝ち(mod 固有が global より優先)。",
+  "power_rules": {
+    "Vulnerable": {
+      "type": "debuff"
+    },
+    "Weak": {
+      "type": "debuff"
+    },
+    "Strength": {
+      "type": "buff"
+    },
+    "Dexterity": {
+      "type": "buff"
+    }
+  },
+  "card_rules": {
+    "Limit Break": {
+      "fx_replace": [
+        {
+          "op": "power_multiply",
+          "n": 2,
+          "tgt": "self",
+          "power": "Strength"
+        }
+      ]
+    },
+    "Entrench": {
+      "fx_replace": [
+        {
+          "op": "multiply_block",
+          "n": 2,
+          "tgt": "self"
+        }
+      ]
+    },
+    "Body Slam": {
+      "fx_replace": [
+        {
+          "op": "damage",
+          "n": 0,
+          "tgt": "enemy",
+          "dyn": "block"
+        }
+      ]
+    },
+    "Perfected Strike": {
+      "fx_add": [
+        {
+          "op": "conditional_bonus",
+          "of": "damage",
+          "n": 2,
+          "cond": "per_strike_in_deck"
+        }
+      ]
+    }
+  },
+  "mods": {
+    "hsr-mod": {
+      "resources": {
+        "toughness": "敵の靭性ゲージ。0で撃破状態(別勝利筋)。HPダメージと別系統",
+        "energy": "mod独自エネルギーゲージ",
+        "charge": "キャラ固有チャージリソース"
+      },
+      "powers": {
+        "BreakEffect": {
+          "type": "buff",
+          "note": "撃破特効"
+        },
+        "Quake": {
+          "type": "buff",
+          "note": "蓄積→起爆ダメージ"
+        },
+        "BrainInAVat": {
+          "type": "buff",
+          "note": "被攻撃時ブロック"
+        },
+        "Energy": {
+          "type": "resource",
+          "note": "独自エネルギー"
+        },
+        "Charge": {
+          "type": "resource",
+          "note": "チャージ"
+        },
+        "Toughness": {
+          "type": "resource",
+          "note": "敵靭性ゲージ"
+        }
+      }
+    },
+    "LustTravel": {
+      "resources": {
+        "lust": "独自ゲージ。蓄積で一部カードが強化"
+      },
+      "powers": {
+        "ShowB": {
+          "type": "buff",
+          "note": "露出系バフ"
+        },
+        "Lust": {
+          "type": "resource",
+          "note": "独自ゲージ"
+        }
+      }
+    },
+    "madoka": {
+      "powers": {
+        "ManaStrength": {
+          "type": "buff",
+          "note": "強化リソース"
+        }
+      }
+    }
+  }
+}

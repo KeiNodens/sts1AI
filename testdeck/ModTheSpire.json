@@ -1,0 +1,16 @@
+{
+  "modid": "testdeck",
+  "name": "TestDeck",
+  "author_list": [
+    "KeiNodens"
+  ],
+  "description": "test helper: inject cards into hand at battle start",
+  "version": "0.1.0",
+  "sts_version": "2022-12-18",
+  "mts_version": "3.0.0",
+  "dependencies": [
+    "basemod"
+  ],
+  "optional_dependencies": [],
+  "update_json": ""
+}

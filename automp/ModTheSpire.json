@@ -1,0 +1,18 @@
+{
+  "modid": "automp",
+  "name": "AutoMP",
+  "author_list": [
+    "KeiNodens"
+  ],
+  "description": "auto host/join localhost TiS session (env TIS_AUTOMP=host|join)",
+  "version": "0.1.0",
+  "sts_version": "2022-12-18",
+  "mts_version": "3.0.0",
+  "dependencies": [
+    "basemod",
+    "stslib",
+    "spireTogether"
+  ],
+  "optional_dependencies": [],
+  "update_json": ""
+}
