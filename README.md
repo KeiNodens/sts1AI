@@ -1,5 +1,7 @@
 # sts1AI
 
+[![Python checks](https://github.com/KeiNodens/sts1AI/actions/workflows/ci.yml/badge.svg)](https://github.com/KeiNodens/sts1AI/actions)
+
 Slay the Spireを、人間とAIで協力プレイするためのローカルツールです。Together in SpireとCommunication Modを使い、自作のAutoMP、HTTPブリッジ、MCPサーバー、カード評価器を組み合わせています。
 
 自分のWindows環境で開発した実験的なプロジェクトです。セーブの衝突対策と再接続を含みます。他の利用者による導入や、あらゆるModの互換性は確認していません。ゲームや第三者Modの配布物は含みません。
@@ -57,7 +59,7 @@ hostのブリッジは15532、AI側は15531、ゲーム同士の接続は49580�
 
 ## MCPクライアントへの登録
 
-設定例の<repo>を絶対パスに置き換えます。MCPは標準入出力を使います。
+設定例の`<repo>`を絶対パスに置き換えます。MCPは標準入出力を使います。
 
 ```json
 {

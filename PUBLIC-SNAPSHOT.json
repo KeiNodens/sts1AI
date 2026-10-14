@@ -23,8 +23,8 @@
     "mcp_bridge/server.py": "60db151a15be5fd2231704988c0b7287560bd8eb0a0054048776a68f80090584",
     "NOTICE.md": "c5243a35323a682a56b28052cc0a201eccef10261c277037e39a7b9605edcdc0",
     "pyproject.toml": "1b7886eac40865edd51e5f570aa5c8e03cb6ebc1a6c520908cb28baad06b5c32",
-    "README.md": "0e807ddccc162e65612501d55c50d245e8aa456f53d104478eb0afab7c9e1edf",
-    "requirements-lock.txt": "1dff40bf3cf6d06bfb80184cefbc48b73694f4dc1273133cb03ec3f1e189a72c",
+    "README.md": "7f8976aa05f3d85f405b996723a6eb6af34600c667361659582e1012818f783b",
+    "requirements-lock.txt": "aeabcf261a5116bc2b2dee2fcd8de6a0f8da870618b9b4680c7ba776dcaf3412",
     "requirements.txt": "5f0cd1bc40b493af5f764ac9a366773ba8c424fca3fe0269ccbb53f2cabe7702",
     "scripts/build-mods.ps1": "50c420112b3145ca8d72e5b54bfe45f1e4fe30410fba011ccf3911abd237e0d5",
     "scripts/launch.ps1": "5f64f22f6556197481e2dacb31c6632b77a2052250f5330a37f09e7495299d45",
@@ -38,9 +38,9 @@
     "tests/test_pack.py": "0d08d5fff5a837b7820571b8027e47bed7051f7b711756bbcf9c4ad81a541887",
     "tests/test_standalone.py": "a31a3231179281760e67d836dcd9cc0470994997c90f597665f2b54e549c5114",
     "tools/__init__.py": "226a8bfb8752de9c857704382701afe0b80ac5515aa004bd4923da65e5428948",
-    "tools/check_release.py": "324ec64163d48f08c52d4b1e1321df08539055be00018f89ff7a65e518a3bdd9",
+    "tools/check_release.py": "ebce3034ce2458a7f924946e7205aa5ce8b1d43827679f4770c4e7d460f2376d",
     "tools/gen_card_kb1.py": "330173c929e3c59f879aa943a029ff8bb54410e55ebe0e9c7f50910f71ee47cc",
     "tools/gen_mod_kb1.py": "8171ee6929014009cba06e80b8f5c36c868feaca802ade0fe7959c0509eeb327",
-    "VALIDATION.md": "33e4bacdaa29d5f30b16522b00694f25efccd38b3aba95e35f467362f3a440f5"
+    "VALIDATION.md": "49dfd280274d68caa00e8ca4d1ca14ad099cc0fdfcb8e6ae41f9aee966a460f0"
   }
 }
